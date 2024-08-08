@@ -10,7 +10,7 @@ let bird = {
     width: 20,
     height: 20,
     gravity: 0.6,
-    lift: -5,
+    lift: -2,
     velocity: 0,
 };
 

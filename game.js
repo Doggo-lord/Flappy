@@ -25,7 +25,7 @@ let highScore = 0;
 let gameOver = false;
 
 // Customizable gap size between pipes
-let pipeGap = 120; // Change this value to adjust the gap size
+let pipeGap = 150; // Change this value to adjust the gap size
 
 // Event listener for jumping
 document.addEventListener("keydown", function(event) {

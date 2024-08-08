@@ -126,6 +126,9 @@ function tryAgain() {
     gameLoop();
 }
 
+// Attach event listener to the Try Again button
+document.getElementById("tryAgainButton").addEventListener("click", tryAgain);
+
 // Main game loop
 function gameLoop() {
     if (gameOver) return;

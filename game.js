@@ -13,7 +13,7 @@ let bird = {
     width: 20,
     height: 20,
     gravity: 0.6, // Gravity effect
-    lift: -8, // Lift effect when jumping
+    lift: -10, // Lift effect when jumping
     velocity: 0,
 };
 
@@ -23,6 +23,9 @@ let frame = 0;
 let score = 0;
 let highScore = 0;
 let gameOver = false;
+
+// Customizable gap size between pipes
+let pipeGap = 120; // Change this value to adjust the gap size
 
 // Event listener for jumping
 document.addEventListener("keydown", function(event) {
@@ -69,8 +72,8 @@ function updatePipes() {
             x: canvas.width,
             top: 0,
             topHeight: pipeHeight,
-            bottom: pipeHeight + 80,
-            bottomHeight: canvas.height - pipeHeight - 80,
+            bottom: pipeHeight + pipeGap,
+            bottomHeight: canvas.height - pipeHeight - pipeGap,
             width: 20,
         });
     }

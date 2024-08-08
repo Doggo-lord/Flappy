@@ -13,7 +13,7 @@ let bird = {
     width: 20,
     height: 20,
     gravity: 0.6, // Gravity effect
-    lift: -10, // Lift effect when jumping
+    lift: -8, // Lift effect when jumping
     velocity: 0,
 };
 
